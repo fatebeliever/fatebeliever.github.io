@@ -60,8 +60,7 @@ layout: post
 title: "{judul}"
 author: "Anonymous"
 date: {tahun}-{bulan}-{tanggal} {jam}:{menit}:{detik}
-# gambar: "{gambar}"
-# /blog/{tahun}/{bulan}/{tanggal}/{judulstrip}.html
+# /{tahun}/{bulan}/{tanggal}/{judulstrip}.html
 ---
 
 """
@@ -84,7 +83,7 @@ isifile = isifile.format(
 	gambar = gambar
 )
 
-buatfile = open("_posts/"+namafile, "w")
+buatfile = open("_draft/"+namafile, "w")
 buatfile.write(isifile)
 
-os.system("subl _posts/"+namafile)
+os.system("subl _draft/"+namafile)
